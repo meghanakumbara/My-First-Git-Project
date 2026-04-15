@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Simple Admin Panel</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; display: flex; height: 100vh; }
+        /* Sidebar Navigation */
+        .sidebar { width: 200px; background: #2c3e50; color: white; padding: 20px; }
+        .sidebar h2 { font-size: 1.2rem; margin-bottom: 30px; }
+        .sidebar a { display: block; color: white; text-decoration: none; padding: 10px 0; border-bottom: 1px solid #34495e; }
+        .sidebar a:hover { color: #1abc9c; }
+        
+        /* Main Content Area */
+        .main { flex-grow: 1; padding: 20px; background: #ecf0f1; }
+        .header { background: white; padding: 15px; margin-bottom: 20px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        .stats-container { display: flex; gap: 20px; }
+        .card { background: white; padding: 20px; border-radius: 8px; flex: 1; text-align: center; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        .card h3 { margin: 0; color: #7f8c8d; font-size: 0.9rem; }
+        .card p { font-size: 1.5rem; font-weight: bold; margin: 10px 0 0; }
+    </style>
+</head>
+<body>
+
+    <div class="sidebar">
+        <h2>Admin Panel</h2>
+        <a href="#">Dashboard</a>
+        <a href="#">Users</a>
+        <a href="#">Settings</a>
+        <a href="#">Logout</a>
+    </div>
+
+    <div class="main">
+        <div class="header">
+            Welcome back, <strong>Admin</strong>!
+        </div>
+
+        <div class="stats-container">
+            <div class="card">
+                <h3>Total Users</h3>
+                <p>1,240</p>
+            </div>
+            <div class="card">
+                <h3>Sales</h3>
+                <p>$4,500</p>
+            </div>
+            <div class="card">
+                <h3>Pending Tasks</h3>
+                <p>12</p>
+            </div>
+        </div>
+        
+        <br>
+        <h3>Recent Activity</h3>
+        <table border="1" cellpadding="10" style="width:100%; background:white; border-collapse: collapse; border: none;">
+            <tr style="background:#f8f9fa;">
+                <th>User</th>
+                <th>Action</th>
+                <th>Date</th>
+            </tr>
+            <tr>
+                <td>John Doe</td>
+                <td>Updated Profile</td>
+                <td>2026-04-15</td>
+            </tr>
+            <tr>
+                <td>Sarah Smith</td>
+                <td>Made a purchase</td>
+                <td>2026-04-14</td>
+            </tr>
+        </table>
+    </div>
+
+</body>
+</html>
